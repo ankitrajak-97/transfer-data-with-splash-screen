@@ -47,6 +47,11 @@ class _IntroPageState extends State<IntroPage> {
             ),
             RangeSlider(
                 values: values,
+                labels: labels,
+                divisions: 10,
+                min: 0,
+                max: 200,
+                inactiveColor: Colors.purple.shade100,
                 onChanged: (newValue) {
                   values = newValue;
                   setState(() {});
